@@ -18,12 +18,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./email-builder
 
       - name: Build
         run: npm run build
+        working-directory: ./email-builder
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./email-builder/dist
