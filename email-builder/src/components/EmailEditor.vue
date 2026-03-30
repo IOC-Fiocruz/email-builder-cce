@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, ref } from 'vue'
-import grapesjs, { Editor } from 'grapesjs'
+import grapesjs from 'grapesjs'
+import type { Editor } from 'grapesjs'
 import 'grapesjs/dist/css/grapes.min.css'
 import { newsletterSexta, newsBlock } from '../templates/newsletterSexta'
 
