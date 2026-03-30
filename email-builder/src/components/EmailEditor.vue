@@ -48,12 +48,7 @@ onMounted(() => {
           open: false,
           properties: [
             'background-color',
-            {
-              name: 'Imagem de fundo',
-              property: 'background-image',
-              type: 'text',
-              placeholder: "url('https://...')"
-            },
+            'background-image',  // ← troca o objeto pelo nome simples
             'background-size',
             'background-position'
           ]
